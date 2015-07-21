@@ -2,7 +2,7 @@
 -- Set up
 -----------------------------------------------
 
-local hyper = {"cmd", "alt", "ctrl"}
+local hyper = {"cmd", "ctrl"}
 
 hs.window.animationDuration = 0
 
