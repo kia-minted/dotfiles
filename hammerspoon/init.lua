@@ -16,8 +16,7 @@ hs.hotkey.bind(hyper, 'Left', function()
         local f = win:frame()
         local screen = win:screen()
         local max = screen:frame()
-
-        if f.x == max.x and f.y == max.y then
+        if f.x == max.x and f.y == max.y and f.w <= max.w/2 then
             screen = screen:previous()
             max = screen:frame()
             f.x = max.x + (max.w / 2)
