@@ -1,0 +1,8 @@
+[user]
+  name = Kia Fathi
+[alias]
+  changeremotehost = !sh -c \"git remote -v | grep '$1.*fetch' | sed s/..fetch.// | sed s/$1/$2/ | xargs git remote set-url\"
+  setmailminted = "config user.email 'kia.fathi@minted.com'"
+  setmailpersonal = "config user.email 'kiafathi@me.com"
+  set_minted = !sh -c \"git changeremotehost github.com github_minted && git setmailminted\"
+  set_personal = !sh -c \"git changeremotehost github_minted github.com && git setmailpersonal\"
