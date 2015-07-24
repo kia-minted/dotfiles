@@ -7,3 +7,5 @@
   setuserpersonal = "config user.email 'kiafathi@me.com'"
   setminted = !sh -c \"git changeremotehost github.com github_minted && git setuserminted\"
   setpersonal = !sh -c \"git changeremotehost github_minted github.com && git setuserpersonal\"
+[core]
+	editor = vim
