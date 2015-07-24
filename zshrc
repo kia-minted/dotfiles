@@ -79,6 +79,7 @@ fi
 
 # Aliases
 alias vi='mvim'
+alias mvim='open -a MacVim'
 
 export NVM_DIR="/Users/kiafathi/.nvm"
 
