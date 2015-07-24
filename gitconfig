@@ -8,4 +8,8 @@
   setminted = !sh -c \"git changeremotehost github.com github_minted && git setuserminted\"
   setpersonal = !sh -c \"git changeremotehost github_minted github.com && git setuserpersonal\"
 [core]
-	editor = vim
+	editor = vi
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
