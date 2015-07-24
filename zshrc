@@ -76,8 +76,14 @@ fi
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Aliases 
-alias vi="vim"
+
+# Aliases
+alias vi='mvim'
 
 export NVM_DIR="/Users/kiafathi/.nvm"
+
+# Computer Specific Aliases
+if [ -f ~/.comprc ]; then
+  source ~/.comprc
+fi
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
