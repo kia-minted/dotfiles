@@ -1,12 +1,3 @@
-[user]
-  name = "Kia Fathi"
-  email = kiafathi@me.com
-[alias]
-  changeremotehost = !sh -c \"git remote -v | grep '$1.*fetch' | sed s/..fetch.// | sed s/$1/$2/ | xargs git remote set-url\"
-  setuserminted = "config user.email 'kia.fathi@minted.com'"
-  setuserpersonal = "config user.email 'kiafathi@me.com'"
-  setminted = !sh -c \"git changeremotehost github.com github_minted && git setuserminted\"
-  setpersonal = !sh -c \"git changeremotehost github_minted github.com && git setuserpersonal\"
 [core]
 	editor = vi
 [filter "lfs"]
